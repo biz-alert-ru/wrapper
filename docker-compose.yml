@@ -4,21 +4,14 @@ services:
     build: mongo:latest
     env_file:
       - .env
-    ports:
-      - 27017:27017
     volumes:
       - "./mongo_data:/data/db"
   api:
     build: backend
-    ports:
-      - 8000:8080
     env_file:
       - .env
   front:
     build: front
-    ports:
-      - 8080:80
-      - 8443:443
   nginx:
     image: nginx:alpine
     volumes:
