@@ -1,3 +1,6 @@
 [submodule "front"]
 	path = front
 	url = https://github.com/biz-alert-ru/biz-alert.ru
+[submodule "backend"]
+	path = backend
+	url = git@github.com:biz-alert-ru/biz-alert.ru_backend.git
